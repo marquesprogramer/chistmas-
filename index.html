@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Natal</title>
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="header__content container">
+            <a href="#" class="logo" id="logo"><i class="fas fa-tree"></i>CHISTMAS</a>
+
+            <div class="nav__social" id="nav-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+
+            <div class="nav__user">
+                <a href="#" title="Minha conta"><i class="fas fa-user"></i></a>
+                <a href="#step-pgto" class="cart" id="cart" title="Meu trenó">
+                    <i class="fas fa-sleigh"></i>
+                    <span>4</span>
+                </a>
+            </div>
+        </div>
+
+    </header>
+
+    <section class="home container section">
+        <div class="home__title">
+            <h1>Decore sua árvore</h1>
+            <p>e receba em casa.</p>
+            <a href="#step-star" class="btn">começar<i class="fas fa-arrow-right icon__right"></i></a>
+        </div>
+        <div class="home__img">
+            <img src="assets/img/hero-img.png" alt="">
+        </div>
+    </section>
+
+    <section class="product product__star" id="step-star">
+        <div class="product__container container section">
+            <div class="section__title">
+                <h1>Estrela</h1>
+                <p>Escolha quem vai ser o destaque da sua árvore.</p>
+            </div>
+
+            <div class="product__content">
+                <div class="product__cards swiper" id="product-cards">
+                    <div class="product__card swiper-wrapper">
+
+                        <div class="product__card-item swiper-slide"
+                            onclick="imgStar('assets/img/stars/star-img-1.png')">
+                            <div class="card-star">
+                                <img src="assets/img/stars/star-img-1.png" alt="">
+                                <div class="product__card-price">
+                                    <h2>Estrela dourada com aro circular.</h2>
+                                    <span>caixa: 1 UNIDADE</span>
+                                    <p class="product__price">R$ 15,99</p>
+                                </div>
+                                <a href="#" class="btn btn__payment">adicionar ao trenó</a>
+                            </div>
+                        </div>
+
+                        <div class="product__card-item swiper-slide"
+                            onclick="imgStar('assets/img/stars/star-img-2.png')">
+                            <div class="card-star">
+                                <img src="assets/img/stars/star-img-2.png" alt="">
+                                <div class="product__card-price">
+                                    <h2>Estrela ouro metálico perfurado.</h2>
+                                    <span>caixa: 1 UNIDADE</span>
+                                    <p class="product__price">R$ 12,99</p>
+                                </div>
+                                <a href="#" class="btn btn__payment">adicionar ao trenó</a>
+                            </div>
+                        </div>
+
+                        <div class="product__card-item swiper-slide"
+                            onclick="imgStar('assets/img/stars/star-img-3.png')">
+                            <div class="card-star">
+                                <img src="assets/img/stars/star-img-3.png" alt="">
+                                <div class="product__card-price">
+                                    <h2>Estrela vermelho natalino liso.</h2>
+                                    <span>caixa: 1 UNIDADE</span>
+                                    <p class="product__price">R$ 19,99</p>
+                                </div>
+                                <a href="#" class="btn btn__payment">adicionar ao trenó</a>
+                            </div>
+                        </div>
+
+                        <div class="product__card-item swiper-slide"
+                            onclick="imgStar('assets/img/stars/star-img-1.png')">
+                            <div class="card-star">
+                                <img src="assets/img/stars/star-img-1.png" alt="">
+                                <div class="product__card-price">
+                                    <h2>Estrela dourada com aro circular.</h2>
+                                    <span>caixa: 1 UNIDADE</span>
+                                    <p class="product__price">R$ 15,99</p>
+                                </div>
+                                <a href="#" class="btn btn__payment">adicionar ao trenó</a>
+                            </div>
+                        </div>
+
+                        <div class="product__card-item swiper-slide"
+                            onclick="imgStar('assets/img/stars/star-img-2.png')">
+                            <div class="card-star">
+                                <img src="assets/img/stars/star-img-2.png" alt="">
+                                <div class="product__card-price">
+                                    <h2>Estrela ouro metálico perfurado.</h2>
+                                    <span>caixa: 1 UNIDADE</span>
+                                    <p class="product__price">R$ 12,99</p>
+                                </div>
+                                <a href="#" class="btn btn__payment">adicionar ao trenó</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <div class="product__img-detail">
+                    <img src="assets/img/stars/star-img-1.png" alt="" class="img__product-star">
+                </div>
+            </div>
+
+            <div class="product__btns">
+                <a href="#" class="btn"><i class="fas fa-arrow-left icon__left"></i>voltar</a>
+                <a href="#step-balls" class="btn">próximo<i class="fas fa-arrow-right icon__right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="product product__balls" id="step-balls">
+        <div class="product__container container section">
+            <div class="section__title">
+                <h1>Bolas Natalinas</h1>
+                <p>Escolha qual será a sua cor nesse natal.</p>
+            </div>
+
+            <div class="product__content">
+                <div class="product__cards swiper" id="product-cards">
+                    <div class="product__card swiper-wrapper">
+
+                        <div class="product__card-item swiper-slide"
+                            onclick="imgBalls('assets/img/balls/ball-img-1.png')">
+                            <div class="card-balls">
+                                <img src="assets/img/balls/ball-img-1.png" alt="">
+                                <div class="product__card-price">
+                                    <h2>Bolas natalinas branca.</h2>
+                                    <span>caixa: 12 UNIDADE</span>
+                                    <p class="product__price">R$ 9,99</p>
+                                </div>
+                                <a href="#" class="btn btn__payment">adicionar ao trenó</a>
+                            </div>
+                        </div>
+
+                        <div class="product__card-item swiper-slide"
+                            onclick="imgBalls('assets/img/balls/ball-img-2.png')">
+                            <div class="card-balls">
+                                <img src="assets/img/balls/ball-img-2.png" alt="">
+                                <div class="product__card-price">
+                                    <h2>Bolas natalinas vermelha.</h2>
+                                    <span>caixa: 12 UNIDADE</span>
+                                    <p class="product__price">R$ 12,99</p>
+                                </div>
+                                <a href="#" class="btn btn__payment">adicionar ao trenó</a>
+                            </div>
+                        </div>
+
+                        <div class="product__card-item swiper-slide"
+                            onclick="imgBalls('assets/img/balls/ball-img-3.png')">
+                            <div class="card-balls">
+                                <img src="assets/img/balls/ball-img-3.png" alt="">
+                                <div class="product__card-price">
+                                    <h2>Bolas natalinas dourada.</h2>
+                                    <span>caixa: 12 UNIDADE</span>
+                                    <p class="product__price">R$ 11,99</p>
+                                </div>
+                                <a href="#" class="btn btn__payment">adicionar ao trenó</a>
+                            </div>
+                        </div>
+
+                        <div class="product__card-item swiper-slide"
+                            onclick="imgBalls('assets/img/balls/ball-img-1.png')">
+                            <div class="card-balls">
+                                <img src="assets/img/balls/ball-img-1.png" alt="">
+                                <div class="product__card-price">
+                                    <h2>Bolas natalinas branca.</h2>
+                                    <span>caixa: 12 UNIDADE</span>
+                                    <p class="product__price">R$ 9,99</p>
+                                </div>
+                                <a href="#" class="btn btn__payment">adicionar ao trenó</a>
+                            </div>
+                        </div>
+
+                        <div class="product__card-item swiper-slide"
+                            onclick="imgBalls('assets/img/balls/ball-img-2.png')">
+                            <div class="card-balls">
+                                <img src="assets/img/balls/ball-img-2.png" alt="">
+                                <div class="product__card-price">
+                                    <h2>Bolas natalinas vermelha.</h2>
+                                    <span>caixa: 12 UNIDADE</span>
+                                    <p class="product__price">R$ 12,99</p>
+                                </div>
+                                <a href="#" class="btn btn__payment">adicionar ao trenó</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <div class="product__img-detail">
+                    <img src="assets/img/balls/ball-img-1.png" alt="" class="img__product-balls">
+                </div>
+            </div>
+
+            <div class="product__btns">
+                <a href="#step-star" class="btn"><i class="fas fa-arrow-left icon__left"></i>voltar</a>
+                <a href="#step-acessory" class="btn">próximo<i class="fas fa-arrow-right icon__right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="product product__acessory" id="step-acessory">
+        <div class="product__container container section">
+            <div class="section__title">
+                <h1>Acessórios</h1>
+                <p>Escolha aqueles que vão alegrar seu natal.</p>
+            </div>
+
+            <div class="product__content">
+                <div class="product__cards swiper" id="product-cards">
+                    <div class="product__card swiper-wrapper">
+
+                        <div class="product__card-item swiper-slide"
+                            onclick="imgAcessory('assets/img/acessorys/acessory-img-1.png')">
+                            <div class="card-acessory">
+                                <img src="assets/img/acessorys/acessory-img-1.png" alt="">
+                                <div class="product__card-price">
+                                    <h2>Boneco de neve com cartola.</h2>
+                                    <span>caixa: 6 UNIDADE</span>
+                                    <p class="product__price">R$ 11,99</p>
+                                </div>
+                                <a href="#" class="btn btn__payment">adicionar ao trenó</a>
+                            </div>
+                        </div>
+
+                        <div class="product__card-item swiper-slide"
+                            onclick="imgAcessory('assets/img/acessorys/acessory-img-2.png')">
+                            <div class="card-acessory">
+                                <img src="assets/img/acessorys/acessory-img-2.png" alt="">
+                                <div class="product__card-price">
+                                    <h2>Papai Noel boas vindas.</h2>
+                                    <span>caixa: 6 UNIDADE</span>
+                                    <p class="product__price">R$ 9,99</p>
+                                </div>
+                                <a href="#" class="btn btn__payment">adicionar ao trenó</a>
+                            </div>
+                        </div>
+
+                        <div class="product__card-item swiper-slide"
+                            onclick="imgAcessory('assets/img/acessorys/acessory-img-3.png')">
+                            <div class="card-acessory">
+                                <img src="assets/img/acessorys/acessory-img-3.png" alt="">
+                                <div class="product__card-price">
+                                    <h2>Bengalas duplas coloridas.</h2>
+                                    <span>caixa: 6 UNIDADE</span>
+                                    <p class="product__price">R$ 12,99</p>
+                                </div>
+                                <a href="#" class="btn btn__payment">adicionar ao trenó</a>
+                            </div>
+                        </div>
+
+                        <div class="product__card-item swiper-slide"
+                            onclick="imgAcessory('assets/img/acessorys/acessory-img-1.png')">
+                            <div class="card-acessory">
+                                <img src="assets/img/acessorys/acessory-img-1.png" alt="">
+                                <div class="product__card-price">
+                                    <h2>Boneco de neve com cartola.</h2>
+                                    <span>caixa: 6 UNIDADE</span>
+                                    <p class="product__price">R$ 11,99</p>
+                                </div>
+                                <a href="#" class="btn btn__payment">adicionar ao trenó</a>
+                            </div>
+                        </div>
+
+                        <div class="product__card-item swiper-slide"
+                            onclick="imgAcessory('assets/img/acessorys/acessory-img-2.png')">
+                            <div class="card-acessory">
+                                <img src="assets/img/acessorys/acessory-img-2.png" alt="">
+                                <div class="product__card-price">
+                                    <h2>Papai Noel boas vindas.</h2>
+                                    <span>caixa: 6 UNIDADE</span>
+                                    <p class="product__price">R$ 9,99</p>
+                                </div>
+                                <a href="#" class="btn btn__payment">adicionar ao trenó</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <div class="product__img-detail">
+                    <img src="assets/img/acessorys/acessory-img-1.png" alt="" class="img__product-acessory">
+                </div>
+            </div>
+
+            <div class="product__btns">
+                <a href="#step-balls" class="btn"><i class="fas fa-arrow-left icon__left"></i>voltar</a>
+                <a href="#step-light" class="btn">próximo<i class="fas fa-arrow-right icon__right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="product product__light" id="step-light">
+        <div class="product__container container section">
+            <div class="section__title">
+                <h1>Luzes</h1>
+                <p>Escolha a luzes que vão iluminar seu natal.</p>
+            </div>
+
+            <div class="product__content">
+                <div class="product__cards swiper" id="product-cards">
+                    <div class="product__card swiper-wrapper">
+
+                        <div class="product__card-item swiper-slide"
+                            onclick="imgLight('assets/img/lights/light-img-1.png')">
+                            <div class="card-light">
+                                <img src="assets/img/lights/light-img-1.png" alt="">
+                                <div class="product__card-price">
+                                    <h2>Luzes de natal coloridas.</h2>
+                                    <span>caixa: 100 luzes</span>
+                                    <p class="product__price">R$ 14,99</p>
+                                </div>
+                                <a href="#" class="btn btn__payment">adicionar ao trenó</a>
+                            </div>
+                        </div>
+
+                        <div class="product__card-item swiper-slide"
+                            onclick="imgLight('assets/img/lights/light-img-2.png')">
+                            <div class="card-light">
+                                <img src="assets/img/lights/light-img-2.png" alt="">
+                                <div class="product__card-price">
+                                    <h2>Luzes de natal led amarela.</h2>
+                                    <span>caixa: 100 luzes</span>
+                                    <p class="product__price">R$ 19,99</p>
+                                </div>
+                                <a href="#" class="btn btn__payment">adicionar ao trenó</a>
+                            </div>
+                        </div>
+
+                        <div class="product__card-item swiper-slide"
+                            onclick="imgLight('assets/img/lights/light-img-3.png')">
+                            <div class="card-light">
+                                <img src="assets/img/lights/light-img-3.png" alt="">
+                                <div class="product__card-price">
+                                    <h2>Luzes de natal amarela.</h2>
+                                    <span>caixa: 100 luzes</span>
+                                    <p class="product__price">R$ 12,99</p>
+                                </div>
+                                <a href="#" class="btn btn__payment">adicionar ao trenó</a>
+                            </div>
+                        </div>
+
+                        <div class="product__card-item swiper-slide"
+                            onclick="imgLight('assets/img/lights/light-img-1.png')">
+                            <div class="card-light">
+                                <img src="assets/img/lights/light-img-1.png" alt="">
+                                <div class="product__card-price">
+                                    <h2>Luzes de natal coloridas.</h2>
+                                    <span>caixa: 100 luzes</span>
+                                    <p class="product__price">R$ 14,99</p>
+                                </div>
+                                <a href="#" class="btn btn__payment">adicionar ao trenó</a>
+                            </div>
+                        </div>
+
+                        <div class="product__card-item swiper-slide"
+                            onclick="imgLight('assets/img/lights/light-img-2.png')">
+                            <div class="card-light">
+                                <img src="assets/img/lights/light-img-2.png" alt="">
+                                <div class="product__card-price">
+                                    <h2>Luzes de natal led amarela.</h2>
+                                    <span>caixa: 100 luzes</span>
+                                    <p class="product__price">R$ 19,99</p>
+                                </div>
+                                <a href="#" class="btn btn__payment">adicionar ao trenó</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <div class="product__img-detail">
+                    <img src="assets/img/lights/light-img-1.png" alt="" class="img__product-light">
+                </div>
+            </div>
+
+            <div class="product__btns">
+                <a href="#step-acessory" class="btn"><i class="fas fa-arrow-left icon__left"></i>voltar</a>
+                <a href="#step-pgto" class="btn btn__payment" id="finish">
+                    <i class="fas fa-sleigh icon__left"></i>ir para trenó</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="payment" id="step-pgto">
+        <div class="payment__content container">
+            <article class="payment__content-left">
+                <div class="mySleigh">
+                    <h2>Meu trenó</h2>
+                    <div class="myProducts">
+
+                        <div class="myProducts__item">
+                            <div class="myProducts__item-img">
+                                <img src="assets/img/stars/star-img-1.png" alt="">
+                            </div>
+                            <div class="myProducts__item-desc">
+                                <p>Estrela dourada com aro circular.</p>
+                                <div class="details">
+                                    <div class="details__qtd">
+                                        <i class="fas fa-plus icon-qtd"></i>
+                                        <input type="number" id="number" value="1">
+                                        <i class="fas fa-minus icon-qtd"></i>
+                                    </div>
+                                    <div class="details__price">
+                                        <span>R$ 15,99</span>
+                                    </div>
+                                </div>
+                                <i class="fas fa-times icon-close"></i>
+                            </div>
+                        </div>
+
+                        <div class="myProducts__item">
+                            <div class="myProducts__item-img">
+                                <img src="assets/img/balls/ball-img-1.png" alt="">
+                            </div>
+                            <div class="myProducts__item-desc">
+                                <p>Bolas natalinas branca.</p>
+                                <div class="details">
+                                    <div class="details__qtd">
+                                        <i class="fas fa-plus icon-qtd"></i>
+                                        <input type="number" id="number" value="1">
+                                        <i class="fas fa-minus icon-qtd"></i>
+                                    </div>
+                                    <div class="details__price">
+                                        <span>R$ 9,99</span>
+                                    </div>
+                                </div>
+                                <i class="fas fa-times icon-close"></i>
+                            </div>
+                        </div>
+
+                        <div class="myProducts__item">
+                            <div class="myProducts__item-img">
+                                <img src="assets/img/acessorys/acessory-img-1.png" alt="">
+                            </div>
+                            <div class="myProducts__item-desc">
+                                <p>Boneco de neve com cartola.</p>
+                                <div class="details">
+                                    <div class="details__qtd">
+                                        <i class="fas fa-plus icon-qtd"></i>
+                                        <input type="number" id="number" value="1">
+                                        <i class="fas fa-minus icon-qtd"></i>
+                                    </div>
+                                    <div class="details__price">
+                                        <span>R$ 11,99</span>
+                                    </div>
+                                </div>
+                                <i class="fas fa-times icon-close"></i>
+                            </div>
+                        </div>
+
+                        <div class="myProducts__item">
+                            <div class="myProducts__item-img">
+                                <img src="assets/img/lights/light-img-1.png" alt="">
+                            </div>
+                            <div class="myProducts__item-desc">
+                                <p>Luzes de natal coloridas.</p>
+                                <div class="details">
+                                    <div class="details__qtd">
+                                        <i class="fas fa-plus icon-qtd"></i>
+                                        <input type="number" id="number" value="1">
+                                        <i class="fas fa-minus icon-qtd"></i>
+                                    </div>
+                                    <div class="details__price">
+                                        <span>R$ 14,99</span>
+                                    </div>
+                                </div>
+                                <i class="fas fa-times icon-close"></i>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="myProducts__price">
+                        <a href="#" class="btn btn__payment" id="backStar">continuar comprando</a>
+                        <p>Sub-Total <span>RS 52,96</span></p>
+                    </div>
+
+                </div>
+
+                <div class="myDetails">
+                    <h2>Dados Pessoais</h2>
+
+                    <form action="">
+                        <div class="form__control">
+                            <label for="myName">Nome completo</label>
+                            <input type="text" id="myName" placeholder="Marques Code">
+                        </div>
+
+                        <div class="form__group form__group-adress">
+                            <div class="form__control">
+                                <label for="myAdress">Endereço</label>
+                                <input type="text" id="myAdress" placeholder="Rua da casa">
+                            </div>
+                            <div class="form__control">
+                                <label for="myNumber">Nº</label>
+                                <input type="number" id="myNumber" placeholder="1">
+                            </div>
+                        </div>
+
+                        <div class="form__group">
+                            <div class="form__control">
+                                <label for="Cidade"></label>
+                                <select name="" id="" class="form-select">
+                                    <option selected>Cidade</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <div class="form__control">
+                                <label for="Estado"></label>
+                                <select name="" id="" class="form-select">
+                                    <option selected>Estado</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </article>
+
+            <article class="payment__content-right">
+                <div class="payment__total">
+                    <h2>Total a pagar</h2>
+
+                    <div class="payment__subtotal">
+                        <p>Sub-Total</p>
+                        <span>R$ 52,60</span>
+                    </div>
+
+                    <div class="payment__delivery">
+                        <p>Frete</p>
+                        <span>R$ 0,00</span>
+                    </div>
+
+                    <div class="payment__finish">
+                        <p>Total</p>
+                        <span>R$ 52,60</span>
+                    </div>
+                </div>
+
+                <div class="optionPayment">
+                    <h2>Formas de pagamento</h2>
+
+                    <div class="optionPayment__cards">
+
+                        <div class="optionPayment__card">
+                            <input type="radio" class="form__check-imput" name="card" id="card1" checked>
+                            <label for="card1">
+                                <img src="assets/img/cards-payment/amex.png" alt="">
+                            </label>
+                        </div>
+
+                        <div class="optionPayment__card">
+                            <input type="radio" class="form__check-imput" name="card" id="card2">
+                            <label for="card2">
+                                <img src="assets/img/cards-payment/elo.png" alt="">
+                            </label>
+                        </div>
+
+                        <div class="optionPayment__card">
+                            <input type="radio" class="form__check-imput" name="card" id="card3">
+                            <label for="card3">
+                                <img src="assets/img/cards-payment/mastercard.png" alt="">
+                            </label>
+                        </div>
+
+                        <div class="optionPayment__card">
+                            <input type="radio" class="form__check-imput" name="card" id="card4">
+                            <label for="card4">
+                                <img src="assets/img/cards-payment/visa.png" alt="">
+                            </label>
+                        </div>
+
+                    </div>
+
+                    <form action="" class="form__cards">
+                        <div class="form__control">
+                            <label for="myNumber">Número do cartão</label>
+                            <input type="number" name="" id="myNumber" placeholder="1234 1234 1234 1234">
+                        </div>
+
+                        <div class="form__group">
+                            <div class="form__control">
+                                <label for="myNumber">Número do CVV</label>
+                                <input type="number" name="" id="myNumber" placeholder="123">
+                            </div>
+
+                            <div class="form__control">
+                                <label for="">Validade</label>
+                                <select class="form-select" name="" id="">
+                                    <option selected>Mês</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <div class="form__control">
+                                <select class="form-select" name="" id="">
+                                    <option selected>Ano</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+
+                <a href="#" class="btn" id="checkout">finalizar compra</a>
+            </article>
+        </div>
+
+        <footer class="footer">
+            <div class="footer__content container">
+
+                <div class="copy">
+                    <a href="#" class="logo"><i class="fas fa-tree"></i>CHRISTMAS</a>
+                    <p>&copy Todos os direitos reservados</p>
+                    <span>Feito com ❤️ por MarquesCode</span>
+                </div>
+
+                <div class="about">
+                    <a href="#">Home</a>
+                    <a href="#">Sobre</a>
+                    <a href="#">Termos de uso</a>
+                </div>
+
+                <div class="contact">
+                    <p>Rua Natal. 2512</p>
+                    <p>(11) 1234 1234</p>
+                </div>
+
+                <div class="newsletter">
+                    <h2>Receba nossas novidades no seu e-mail.</h2>
+                    <form action="">
+                        <div class="form__control">
+                            <input type="text" placeholder="Seu melhor e-mail">
+                            <a href="#" class="btn btn__payment">Receber</a>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </footer>
+    </section>
+
+    <!-- SWIPER JS -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!-- STYLE JS -->
+    <script src="assets/js/style.js"></script>
+    <!-- SCRIPT SWIPER -->
+    <script>
+        var swiper = new Swiper("#product-cards", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                420: {
+                    slidesPerView: 1,
+                    spaceBetween: 50,
+                },
+                600: {
+                    slidesPerView: 2,
+                    spaceBetween: 50,
+                },
+                1060: {
+                    slidesPerView: 3,
+                    spaceBetween: 50,
+                },
+            },
+        });
+    </script>
+
+</body>
+
+</html>
